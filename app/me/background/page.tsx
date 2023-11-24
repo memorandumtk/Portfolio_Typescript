@@ -28,15 +28,15 @@ export default function Back() {
           <ul>
             <li className="list-disc list-inside">
               Configuring Cisco routers, switches wireless appliances, and
-              firewalls in companies of my company's clients so my clients'
+              firewalls in companies of my company's clients so my clients&apos;
               requirement is accomplished.
             </li>
             <li className="list-disc list-inside">
-              Setting and Building Linux/Windows server to make clients'
+              Setting and Building Linux/Windows server to make clients&apos;
               environment more secure.
             </li>
             <li className="list-disc list-inside">
-              Communication with clients to achieve my team's mission on
+              Communication with client&apos;s to achieve my teams mission on
               schedule and to ensure effective team coordination and client
               satisfaction.
             </li>
