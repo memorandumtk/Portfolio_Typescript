@@ -28,7 +28,7 @@ export default function Back() {
           <ul>
             <li className="list-disc list-inside">
               Configuring Cisco routers, switches wireless appliances, and
-              firewalls in companies of my company's clients so my clients&apos;
+              firewalls in companies of my company&apos;s clients so my clients&apos;
               requirement is accomplished.
             </li>
             <li className="list-disc list-inside">
