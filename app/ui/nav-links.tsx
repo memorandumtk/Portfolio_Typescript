@@ -9,43 +9,48 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { HashLink } from "react-router-hash-link";
+// import useHash from "../lib/getHash";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState, RefObject } from "react";
+import { useVisibility } from '../lib/visibilityContext'; // Adjust the import path as needed
+
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: "Home", href: "/", icon: HomeIcon },
-  { name: "About Me", href: "/me/about", icon: UserCircleIcon },
-  { name: "Study & Work", href: "/me/background", icon: BuildingOffice2Icon },
+  { name: "About Me", href: "#introduction", icon: UserCircleIcon },
+  { name: "Study & Work", href: "#background", icon: BuildingOffice2Icon },
   {
     name: "Projects",
-    href: "/me/projects",
+    href: "#projects",
     icon: DocumentDuplicateIcon,
-  }
+  },
 ];
 
-export default function NavLinks() {
-  const pathname = usePathname();
+// export default function NavLinks() {
+export const NavLinks: React.FC = () => {
+    const { isVisible } = useVisibility();
+
+    const anchorStyle = isVisible ? "active" : "";
 
   return (
-    <>
+    <ul className="flex flex-col">
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
-          <Link
+          <a
             key={link.name}
             href={link.href}
-            className={clsx(
-              "flex grow text-emerald-600 items-center justify-center gap-2  bg-sky-200 backdrop-blur-xl dark:border-neutral-800 dark:bg-teal-950 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600  md:justify-start md:p-2 md:px-3",
-              {
-                "bg-sky-100 text-blue-600": pathname === link.href,
-              }
-            )}
+            className={`${
+              anchorStyle
+            } flex flex-row gap-2`}
           >
-            <LinkIcon className="flex-none w-8" />
-            <p className="hidden md:block text-lg flex-1 text-center">{link.name}</p>
-          </Link>
+            <LinkIcon className="flex-none h-6 w-6" />
+            <p className="text-lg">{link.name}</p>
+          </a>
         );
       })}
-    </>
+    </ul>
   );
 }

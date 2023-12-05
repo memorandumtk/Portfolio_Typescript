@@ -6,17 +6,10 @@ import styles from "@/app/ui/styles.module.css";
 
 export default function About() {
   return (
-      <main className="relative pb-12 flex flex-col gap-6 justify-center h-full">
-        {/* <Image
-        src={profilePic}
-        alt="Picture of the author"
-        width={200}
-      height={200}
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 rounded-full opacity-50"
-      /> */}
+      <div className="flex flex-col gap-6">
         <div className="text-lg flex flex-col gap-4 leading-10">
             <div className="flex flex-row items-center gap-4">
-          <p className="text-4xl">Introduction</p>
+          <p id="introduction" className="text-4xl">Introduction</p>
           <a href="mailto:memorandum876@outlook.com" className="hover:translate-x-6">
         <Image
         src={profilePic}
@@ -39,6 +32,6 @@ export default function About() {
             you like my page and projects, please reach out to me.
           </p>
         </div>
-      </main>
+      </div>
   );
 }

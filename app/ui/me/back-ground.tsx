@@ -1,9 +1,9 @@
 
 export default function Back() {
   return (
-    <main className="flex flex-col gap-6  h-full">
+    <div className="flex flex-col gap-6">
       <section className="text-lg flex flex-col gap-12">
-        <p className="text-4xl">Study & Work</p>
+        <p id="background" className="text-4xl">Study & Work</p>
 
         <div className="flex flex-col gap-4">
           <div className="flex flex-row">
@@ -57,6 +57,6 @@ export default function Back() {
           </ul>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

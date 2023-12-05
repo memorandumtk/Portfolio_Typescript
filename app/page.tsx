@@ -4,51 +4,53 @@ import { Suspense } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import Loading from "./loading";
+import About from "@/app/ui/me/about";
+import Back from "@/app/ui/me/back-ground";
+import Projects from "@/app/ui/me/projects/projects";
+import Social from "@/app/ui/social-icon";
+import { NavLinks } from "@/app/ui/nav-links";
+// import { BrowserRouter } from "react-router-dom";
+
+import { useVisibility } from './lib/visibilityContext'; // Adjust the import path as needed
+import { useOnScreen } from './lib/useOnscreen'; // Adjust the import path as needed
+
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-32 sm:pt-40 italic overflow-x-hidden">
-      <p className="fixed left-0 top-0 flex w-full justify-center py-10 border-b border-gray-300 bg-sky-200 backdrop-blur-xl dark:border-neutral-800 dark:bg-teal-950 dark:from-inherit lg:fixed lg:left-0 lg:top-0 lg:justify-center lg:w-full lg:border">
-        This is my portfolio site,&nbsp;by using Next.js, Typescript, React,
-        Tailwind.
-      </p>
-
-      <div className="max-w-[360px] sm:max-w-none absolute grid grid-col-1 text-center gap-6 ">
-        <h1 className="break-words text-5xl sm:text-6xl font-bold">
-          Kosuke Takagi
-        </h1>
-        <div className="grid grid-cols-1 gap-4">
-          <p className="break-words text-xl italic">
-            Since I started being resonated by javascript
-          </p>
-          <p className="text-xl italic">It has been...</p>
-          <Suspense fallback={<Loading />}>
-            <Timer />
-          </Suspense>
+    <main className="p-8">
+        <div className="flex flex-row">
+          {/* // Header (Left)  Panel */}
+          <div className="sticky top-0 max-h-screen flex-none w-1/2 flex flex-col justify-center items-center text-center ">
+            <h1 className="break-words text-5xl sm:text-6xl font-bold">
+              Kosuke Takagi
+            </h1>
+            <div className="flex flex-col gap-4">
+              <p className="break-words text-xl italic">
+                Since I started being resonated by javascript
+              </p>
+              <p className="text-xl italic">It has been...</p>
+              <Suspense fallback={<Loading />}>
+                <Timer />
+              </Suspense>
+              <NavLinks />
+              <Social />
+            </div>
+          </div>
+          {/* // AboutMe (Right) Panel */}
+          <div className="flex-none w-1/2">
+            <About />
+            <Back />
+            <Projects />
+          </div>
         </div>
-        <div className="w-full grid grid-col-1 gap-0 pt-0 ">
-          <Link
-            key="about"
-            href="/me/about"
-            className="font-semibold italic group rounded-lg border border-transparent text-2xl py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          >
-            About Me&nbsp;
-            <span className="font-bold inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </Link>
-          <Link
-            key="projects"
-            href="/me/projects"
-            className="font-semibold italic group rounded-lg border border-transparent text-2xl py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          >
-            My Projects&nbsp;
-            <span className="font-bold inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </Link>
-        </div>
-      </div>
     </main>
   );
+}
+
+{
+  /* <p className="fixed left-0 top-0 flex w-full justify-center py-10 border-b border-gray-300 bg-sky-200 backdrop-blur-xl dark:border-neutral-800 dark:bg-teal-950 dark:from-inherit lg:fixed lg:left-0 lg:top-0 lg:justify-center lg:w-full lg:border">
+  This is my portfolio site,&nbsp;by using Next.js, Typescript, React,
+  Tailwind.
+</p> */
 }

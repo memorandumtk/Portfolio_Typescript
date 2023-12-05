@@ -29,3 +29,8 @@ body {
 .global{
   background-color: lightcoral;
 }
+
+
+.active{
+  color: aquamarine;
+}

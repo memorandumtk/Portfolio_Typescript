@@ -18,7 +18,8 @@ export default function Timer() {
         // Site reffered for timer design https://daisyui.com/components/countdown/
         // Site for using condition for class https://stackoverflow.com/questions/30533171/react-js-conditionally-applying-class-attributes
         // I didn't want to use margin, though I used it here.
-        <div className={`m-4 text-2xl grid grid-col-1 sm:grid-flow-col gap-5 text-center p-5 border-4 rounded-3xl ring-4 ring-offset-4 hover:border-double ${seconds % 10 == 0 ? 'border-red-500 ' : 'border-solid'}`}>
+        <div className={`m-4 text-2xl flex flex-row gap-5 text-center p-5 border-4 rounded-3xl ring-4 ring-offset-4 hover:border-double ${seconds % 10 == 0 ? 'border-red-500 ' : 'border-solid'}`}>
+
           <div className="flex flex-col p-2 bg-neutral text-neutral-content">
             <span className="font-bold text-4xl sm:text-6xl">{days}</span>
             days
@@ -28,7 +29,7 @@ export default function Timer() {
             hours
           </div>
           <div className="hidden sm:flex flex-col p-2 bg-neutral text-neutral-content ">
-            <span className="font-bold sm:text-6xl">{hours}</span>
+            <span className="font-bold sm:text-6xl">{minutes}</span>
             min
           </div>
           <div className="hidden sm:flex flex-col p-2 bg-neutral text-neutral-content ">
