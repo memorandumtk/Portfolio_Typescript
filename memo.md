@@ -33,3 +33,7 @@ https://stackoverflow.com/a/69230734/21951181
 
 ### Error 'Could not find a declaration file for module 'react-router-hash-link'. how to deal with
 https://stackoverflow.com/a/56877787/21951181
+
+
+### Changing header link style based on the element that is linked to is in screen using Observer API
+https://betterprogramming.pub/react-useinview-hook-intersection-observer-animations-and-multiple-refs-73c68a33b5b1

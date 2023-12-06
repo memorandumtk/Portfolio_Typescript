@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profilePic from "@/public/myPicture.jpg";
 import styles from "@/app/ui/styles.module.css";
+import { useEffect, useRef, useCallback, useState } from "react";
 
 // Image style reference site: https://stackoverflow.com/questions/60362442/cant-center-absolute-position-tailwind-css
 
@@ -9,7 +10,7 @@ export default function About() {
       <div className="flex flex-col gap-6">
         <div className="text-lg flex flex-col gap-4 leading-10">
             <div className="flex flex-row items-center gap-4">
-          <p id="introduction" className="text-4xl">Introduction</p>
+          <div id="introduction" className="title text-4xl">Introduction</div>
           <a href="mailto:memorandum876@outlook.com" className="hover:translate-x-6">
         <Image
         src={profilePic}

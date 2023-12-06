@@ -13,7 +13,7 @@ import { HashLink } from "react-router-hash-link";
 // import useHash from "../lib/getHash";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState, RefObject } from "react";
-import { useVisibility } from '../lib/visibilityContext'; // Adjust the import path as needed
+// import { useVisibility } from '../lib/visibilityContext'; // Adjust the import path as needed
 
 
 // Map of links to display in the side navigation.
@@ -30,9 +30,9 @@ const links = [
 
 // export default function NavLinks() {
 export const NavLinks: React.FC = () => {
-    const { isVisible } = useVisibility();
+    // const { isVisible } = useVisibility();
 
-    const anchorStyle = isVisible ? "active" : "";
+    // const anchorStyle = isVisible ? "active" : "notactive";
 
   return (
     <ul className="flex flex-col">
@@ -42,9 +42,7 @@ export const NavLinks: React.FC = () => {
           <a
             key={link.name}
             href={link.href}
-            className={`${
-              anchorStyle
-            } flex flex-row gap-2`}
+            className={`flex flex-row gap-2`}
           >
             <LinkIcon className="flex-none h-6 w-6" />
             <p className="text-lg">{link.name}</p>

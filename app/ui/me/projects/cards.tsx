@@ -1,4 +1,6 @@
-import getGitProject from "../../../lib/gitPro";
+'use server'
+import getGitProject from "@/app/lib/gitPro";
+
 
 export default async function Cards() {
   let projectInfo = await getGitProject();

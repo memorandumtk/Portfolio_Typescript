@@ -1,3 +1,4 @@
+'use server'
 import { Octokit } from "octokit";
 
 export default async function getGitProject() {

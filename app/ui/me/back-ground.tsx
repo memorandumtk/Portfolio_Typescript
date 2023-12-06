@@ -3,7 +3,7 @@ export default function Back() {
   return (
     <div className="flex flex-col gap-6">
       <section className="text-lg flex flex-col gap-12">
-        <p id="background" className="text-4xl">Study & Work</p>
+        <div id="background" className="title text-4xl">Study & Work</div>
 
         <div className="flex flex-col gap-4">
           <div className="flex flex-row">
