@@ -11,7 +11,7 @@ export default async function Cards() {
       {projectInfo.map((pro, id) => (
         <li
           key={id}
-          className="text-center break-words max-w-[300px] sm:max-w-[500px] md:max-w-full py-2 flex flex-col items-center rounded-xl shadow-sm opacity-75 bg-gradient-to-r from-emerald-100 to-emerald-400 text-gray-700"
+          className="text-center break-words max-w-[300px] sm:max-w-[500px] md:max-w-full py-2 flex flex-col items-center rounded-xl shadow-sm opacity-75 bg-[beige] text-gray-700"
         >
           <a href={pro.url} target="_blank" className="w-full">
             <p className="p-4 font-bold text-xl">{pro.name}</p>
