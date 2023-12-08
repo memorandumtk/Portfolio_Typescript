@@ -10,13 +10,13 @@ export default function About() {
       <div className="flex flex-col gap-6">
         <div className="text-lg flex flex-col gap-4 leading-10">
             <div className="flex flex-row items-center gap-4">
-          <div id="introduction" className="title text-4xl">Introduction</div>
+          <div id="introduction" className="title">Introduction</div>
           <a href="mailto:memorandum876@outlook.com" className="hover:translate-x-6">
         <Image
         src={profilePic}
         alt="Picture of the author"
-        width={150}
-        height={150}
+        width={100}
+        height={100}
         className=" -z-10 rounded-full"
         />
         </a>

@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en">
-        <body className={robotoSerif.className}>{children}</body>
+        <body className={`bg-gradient-radial from-[beige] to-lime-200 ${robotoSerif.className}`}>{children}</body>
       </html>
   );
 }

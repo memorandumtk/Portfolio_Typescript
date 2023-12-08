@@ -36,4 +36,9 @@ https://stackoverflow.com/a/56877787/21951181
 
 
 ### Changing header link style based on the element that is linked to is in screen using Observer API
+- This is a site that made me understand how to use entries defined on `IntersectionObserver`.
 https://betterprogramming.pub/react-useinview-hook-intersection-observer-animations-and-multiple-refs-73c68a33b5b1
+  
+- Finally, I couldn't manage by myself even using ChatGPT,  So I asked on StackOverFlow. The important and brilliant thing to referring an element in a different component file was leveraging the use of `getElementById`.
+https://stackoverflow.com/questions/77615526/how-to-check-components-that-is-referred-from-anchor-elements-is-in-screen-or-no/77619361#77619361
+
