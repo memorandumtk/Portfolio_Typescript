@@ -26,10 +26,11 @@ export default function About() {
       <p className="text-lg leading-10">
         I would like to be a web developer to be able to build web services that
         resonate with many people.&nbsp;When I am studying and thinking about
-        the logic of coding (mainly Javascript), I can feel comfortable and
-        enjoy it.&nbsp; if I can have the opportunity to work with the
-        development team, I will appreciate and dedicate my power to it.&nbsp;I
-        am seeking a web developer position where I could leverage my
+        the logic of coding, I can feel comfortable and
+        enjoy during doing those.&nbsp; if I can have the opportunity to work with the
+        development team, I will pour my power to my task and the team's projects and 
+        continue to learn how I can improve my coding process by myself and hearing from cowokers.&nbsp;
+        I am seeking a web developer position where I could leverage my
         engineering background and my strong curiosity and motivation to build
         innovative and attractive web services.&nbsp;If you like my page and
         projects, please reach out to me.

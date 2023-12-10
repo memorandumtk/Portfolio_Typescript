@@ -37,7 +37,7 @@ export default function Back() {
               </div>
               <p className="px-4">Tokyo/Japan</p>
             </div>
-            <p className="text-xl font-bold bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent  ">-Working Detail-</p>
+            <p className="text-xl font-bold bg-gradient-to-r from-violet-400 to-violet-950 bg-clip-text text-transparent  ">-Working Detail-</p>
             <ul>
               <li className="list-circle list-inside">
                 Configuring Cisco routers, switches wireless appliances, and
