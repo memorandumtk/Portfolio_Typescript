@@ -30,7 +30,7 @@ export default async function getGitProject() {
       description = repo.description;
       lastUpdate = new Date(repo.updated_at).toUTCString();
       let dateRegexp = /(.*)\s\d\d:/.exec(lastUpdate);
-      console.log(dateRegexp ? dateRegexp[1] : null);
+      // console.log(dateRegexp ? dateRegexp[1] : null);
       let modifiedDate = dateRegexp ? dateRegexp[1] : null;
       projectList.push({ name, url, description, modifiedDate });
     }
