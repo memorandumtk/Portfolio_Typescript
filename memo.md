@@ -1,4 +1,4 @@
-## Timer function
+### Timer function
 - I reffered [this site](https://dev.to/yuridevat/how-to-create-a-timer-with-react-7b9) for calculate time from start date.
 - I know useEffect can be called only top level of the function. [Ref](https://coderpad.io/blog/development/rules-of-react-hooks/#:~:text=Only%20call%20Hooks%20at%20the%20top%20level%20of%20your%20functional,which%20these%20Hooks%20are%20called.) 
 - When I encountered this error, I went to [this site](https://nextjs.org/docs/getting-started/react-essentials).
@@ -42,3 +42,23 @@ https://betterprogramming.pub/react-useinview-hook-intersection-observer-animati
 - Finally, I couldn't manage by myself even using ChatGPT,  So I asked on StackOverFlow. The important and brilliant thing to referring an element in a different component file was leveraging the use of `getElementById`.
 https://stackoverflow.com/questions/77615526/how-to-check-components-that-is-referred-from-anchor-elements-is-in-screen-or-no/77619361#77619361
 
+- Official Mozilla  
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+### Horizontal Line  
+https://flowbite.com/docs/typography/hr/
+
+### Theme switch
+- Official github  
+https://github.com/pacocoursey/next-themes
+- SVG ref  
+https://web.dev/articles/building/a-theme-switch-component
+- Grasping theme toggle  
+https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579 
+
+### Scrool smooth
+- Add class name `scroll-smooth` on html element
+https://mariogiancini.com/implementing-smooth-scroll-behavior-with-tailwind-css-and-nextjs
+
+### Background Gradient Ref
+https://blog.logrocket.com/guide-adding-gradients-tailwind-css/

@@ -1,6 +1,7 @@
 "use client";
 import useTimer from "@/app/lib/calculate";
 import { useState, useEffect } from "react";
+import { inter } from "@/app/ui/fonts";
 
 export default function Timer() {
   const { days, hours, minutes, seconds } = useTimer("2023-09-01T00:00:00");
@@ -18,24 +19,24 @@ export default function Timer() {
         // Site reffered for timer design https://daisyui.com/components/countdown/
         // Site for using condition for class https://stackoverflow.com/questions/30533171/react-js-conditionally-applying-class-attributes
         // I didn't want to use margin, though I used it here.
-        <div className={`m-4 text-2xl flex flex-row gap-5 text-center p-5 border-4 rounded-3xl ring-4 ring-offset-4 hover:border-double ${seconds % 10 == 0 ? 'border-red-500 ' : 'border-solid'}`}>
-
-          <div className="flex flex-col p-2 bg-neutral text-neutral-content">
-            <span className="font-bold text-4xl sm:text-6xl">{days}</span>
-            days
+        <div className={`flex flex-row text-center items-baseline`}>
+          <div className="flex flex-row p-1 bg-neutral text-neutral-content items-baseline">
+            <span className="text-xl">{days}</span>
+            &nbsp;days
           </div>
-          <div className="flex flex-col p-2 bg-neutral text-neutral-content">
-            <span className="font-bold text-4xl sm:text-6xl">{hours}</span>
-            hours
+          <div className="flex flex-row p-1 bg-neutral text-neutral-content items-baseline">
+            <span className="text-xl">{hours}</span>
+            &nbsp;hours
           </div>
-          <div className="hidden sm:flex flex-col p-2 bg-neutral text-neutral-content ">
-            <span className="font-bold sm:text-6xl">{minutes}</span>
-            min
+          <div className="hidden sm:flex flex-row p-1 bg-neutral text-neutral-content items-baseline ">
+            <span className="text-xl">{minutes}</span>
+            &nbsp;min
           </div>
-          <div className="hidden sm:flex flex-col p-2 bg-neutral text-neutral-content ">
-            <span className="font-bold sm:text-6xl">{seconds}</span>
-            sec
+          <div className="hidden sm:flex flex-row p-1 bg-neutral text-neutral-content  items-baseline">
+            <span className="text-xl">{seconds}</span>
+            &nbsp;sec
           </div>
+          <span>&nbsp;passed.</span>
         </div>
     );
   } else {

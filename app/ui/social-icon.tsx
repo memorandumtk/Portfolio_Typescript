@@ -1,12 +1,12 @@
 export default function Social() {
   return (
-    <div>
-      <ul className="flex flex-row gap-4">
+    <div className="">
+      <ul className="flex flex-row gap-4 justify-center">
         <li>
           <a href="https://github.com/memorandumtk?tab=repositories">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -18,7 +18,7 @@ export default function Social() {
           <a href="https://www.linkedin.com/in/kosuke-takagi-27002927a/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -31,7 +31,7 @@ export default function Social() {
           <a href="https://stackoverflow.com/users/21951181/kosuke">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-4 w-4"
               fill="currentColor"
               viewBox="0 0 24 24"
             >

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { inter } from "@/app/ui/fonts";
 import { robotoSerif } from "@/app/ui/fonts";
 import { alegreya } from "@/app/ui/fonts";
+import { lusitana } from "@/app/ui/fonts";
 import "./globals.css";
+import { Providers } from "@/app/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Kosuke Takagi",
@@ -16,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en">
-        <body className={`bg-gradient-radial from-[beige] to-lime-200 ${robotoSerif.className}`}>{children}</body>
-      </html>
+    <html className="scroll-smooth" lang="en" >
+      <body
+        className={`${lusitana.className}`}
+      >
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }
