@@ -4,7 +4,7 @@ import { robotoSerif } from "@/app/ui/fonts";
 import { alegreya } from "@/app/ui/fonts";
 import { lusitana } from "@/app/ui/fonts";
 import "./globals.css";
-import { Providers } from "@/app/ui/theme-provider";
+import { Provider } from "@/app/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Kosuke Takagi",
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={`${lusitana.className}`}
       >
-        <Providers>{children}</Providers>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
