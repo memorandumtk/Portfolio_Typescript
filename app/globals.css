@@ -52,18 +52,19 @@ body {
 }
 
 .observer-active {
-  color: rgb(0, 153, 51);
+  /* color: rgb(0, 153, 51); */
+  color: cornflowerblue;
   font-weight: bold;
 }
 .observer-active-span {
   transition-duration: 1s;
   transform: translateX(2px);
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .observer-active {
-    color: aquamarine;
+    color: cornflowerblue;
   }
-}
+} */
 
 /* @keyframes slide {
   from {

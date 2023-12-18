@@ -11,7 +11,7 @@ export default async function Cards() {
       {projectInfo.map((pro, id) => (
         <li
           key={id}
-          className="hover:shadow-lg hover:shadow-blue-400 text-center break-words max-w-[300px] py-2 flex flex-col items-center rounded-xl opacity-75 bg-blue-100 text-gray-700"
+          className="hover:shadow-lg hover:shadow-blue-400 text-center break-words max-w-[300px] py-2 flex flex-col items-center rounded-xl bg-blue-100 text-gray-700"
         >
           <a href={pro.url} target="_blank" className="w-full">
             <p className="text-lg p-4 font-bold">{pro.name}</p>

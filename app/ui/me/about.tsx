@@ -27,10 +27,12 @@ export default function About() {
         I would like to be a web developer to be able to build web services that
         resonate with many people.&nbsp;When I am studying and thinking about
         the logic of coding, I can feel comfortable and
-        enjoy during doing those.&nbsp; if I can have the opportunity to work with the
-        development team, I will pour my power to my task and the team&apos;s projects and 
-        continue to learn how I can improve my coding process by myself and hearing from cowokers.&nbsp;
-        I am seeking a web developer position where I could leverage my
+        enjoy during doing those.&nbsp; if I can have the opportunity to work with your
+        development team, I will put all my effort into <span className="font-bold">having my task done</span> as soon as I can and 
+        <span className="font-bold"> befit the role of the team&apos;</span> and 
+        continue to learn how I can <span className="font-bold">improve my coding process by myself and hearing from coworkers as well</span>.&nbsp;
+        Because I think it is one of the biggest benefits to work in a company.
+        I am seeking <span className="font-bold">a web developer position</span> where I could leverage my
         engineering background and my strong curiosity and motivation to build
         innovative and attractive web services.&nbsp;If you like my page and
         projects, please reach out to me.

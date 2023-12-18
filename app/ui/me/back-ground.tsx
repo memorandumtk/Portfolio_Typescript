@@ -15,7 +15,7 @@ export default function Back() {
               </div>
               <p className="px-4">Vancouver/Canada</p>
             </div>
-            <p className="text-xl font-bold bg-gradient-to-r from-violet-400 to-violet-950 bg-clip-text text-transparent  ">-Leaning Detail-</p>
+            <p className="text-xl font-bold bg-gradient-to-r from-violet-400 to-violet-950 bg-clip-text text-transparent  ">-Leaning Contents-</p>
             <ul>
               <li className="list-disc list-inside">
                 Knowledge of front-end web development(using HTML. CSS,
@@ -66,7 +66,7 @@ export default function Back() {
               </div>
               <p className="px-4">Chiba/Japan</p>
             </div>
-            <p className="text-xl font-bold bg-gradient-to-r from-violet-400 to-violet-950 bg-clip-text text-transparent  ">-Leaning Detail-</p>
+            <p className="text-xl font-bold bg-gradient-to-r from-violet-400 to-violet-950 bg-clip-text text-transparent  ">-Leaning Contents-</p>
             <ul>
               <li className="list-disc list-inside">Fundamentals of TCP/IP</li>
               <li className="list-disc list-inside">Cisco networking</li>
