@@ -29,7 +29,7 @@ export default function About() {
         the logic of coding, I can feel comfortable and
         enjoy during doing those.&nbsp; if I can have the opportunity to work with your
         development team, I will put all my effort into <span className="font-bold">having my task done</span> as soon as I can and 
-        <span className="font-bold"> befit the role of the team&apos;</span> and 
+        <span className="font-bold"> befit the role of the team</span> and 
         continue to learn how I can <span className="font-bold">improve my coding process by myself and hearing from coworkers as well</span>.&nbsp;
         Because I think it is one of the biggest benefits to work in a company.
         I am seeking <span className="font-bold">a web developer position</span> where I could leverage my
