@@ -61,4 +61,5 @@ https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-
 https://mariogiancini.com/implementing-smooth-scroll-behavior-with-tailwind-css-and-nextjs
 
 ### Background Gradient Ref
-https://blog.logrocket.com/guide-adding-gradients-tailwind-css/
+- https://blog.logrocket.com/guide-adding-gradients-tailwind-css/
+- https://github.com/chronark/chronark.com.git
