@@ -15,7 +15,7 @@ import { ThemeSwitcher } from "@/app/ui/theme-switcher"
 export default function Home() {
   return (
     <main className="p-20 pt-28 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center
-    bg-gradient-radial from-teal-300 via-green-300 to-green-200
+    bg-gradient-radial lg:bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
     dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300">
       {/* // Header (Left)  Panel */}
       <div className="italic lg:sticky lg:top-0 lg:max-h-screen lg:flex-none flex flex-col gap-4 justify-center items-center text-center ">

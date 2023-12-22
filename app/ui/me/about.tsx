@@ -19,7 +19,7 @@ export default function About() {
             alt="Picture of the author"
             width={100}
             height={100}
-            className=" -z-10 rounded-full shadow-lg shadow-lime-800 dark:shadow-slate-200"
+            className="animate-fade-in-left -z-10 rounded-full shadow-lg shadow-lime-800 dark:shadow-slate-200"
           />
         </a>
       </div>

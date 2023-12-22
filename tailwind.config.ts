@@ -23,6 +23,64 @@ const config: Config = {
         circle: "circle",
         roman: "upper-roman",
       },
+      animation: {
+        "fade-in": "fade-in 3s ease-in-out forwards",
+        title: "title 3s ease-out forwards",
+        "fade-left": "fade-left 3s ease-in-out forwards",
+        "fade-in-left": "fade-in-left 2s ease-in-out forwards",
+        "fade-right": "fade-right 3s ease-in-out forwards",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": {
+            opacity: "0%",
+          },
+          "75%": {
+            opacity: "0%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
+        "fade-left": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateX(0%)",
+            opacity: "100%",
+          },
+          "100%": {
+            opacity: "0%",
+          },
+        },
+        "fade-in-left": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0%",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "100%",
+          },
+        },
+        "fade-right": {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0%",
+          },
+
+          "30%": {
+            transform: "translateX(0%)",
+            opacity: "100%",
+          },
+          "100%": {
+            opacity: "0%",
+          },
+        },
+      },
     },
   },
   plugins: [],
