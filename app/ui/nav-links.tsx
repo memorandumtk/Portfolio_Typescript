@@ -62,8 +62,9 @@ export const NavLinks: React.FC = () => {
 
   return (
     <ul
-      className="z-10 text-xl flex flex-row w-full justify-evenly h-full items-center bg-gradient-to-t
-     lg:flex-col lg:bg-none lg:gap-2"
+      className="text-xl flex flex-row w-full justify-evenly h-full items-center 
+         bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
+         lg:flex-col lg:bg-none lg:gap-2"
     >
       {links.map((link) => {
         const LinkIcon = link.icon;
