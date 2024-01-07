@@ -25,7 +25,7 @@ const links = [
 
 // export default function NavLinks() {
 export const NavLinks: React.FC = () => {
-  const [visibleEleId, setvisibleEleId] = useState(links[0].href);
+  const [visibleFieId, setVisibleFieId] = useState(links[0].href);
 
   useEffect(() => {
     // get elements
@@ -33,7 +33,7 @@ export const NavLinks: React.FC = () => {
     const el2 = document.getElementById(links[1].href);
     const el3 = document.getElementById(links[2].href);
     const options = {
-      root: document.querySelector("right-panel"),
+      root: document.querySelector("#right-panel"),
       rootMargin: "0px",
       threshold: [0, 1.0],
     };
@@ -42,7 +42,7 @@ export const NavLinks: React.FC = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting == true) {
           // console.log(entry.target);
-          setvisibleEleId(entry.target.getAttribute("id") || links[0].href);
+          setVisibleFieId(entry.target.getAttribute("id") || links[0].href);
         }
       }, options);
     });
@@ -62,7 +62,7 @@ export const NavLinks: React.FC = () => {
 
   return (
     <ul
-      className="text-xl flex flex-row w-full justify-evenly h-full items-center 
+      className="text-xl flex flex-row w-full justify-evenly h-full items-center
          bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
     dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300
          lg:flex-col lg:bg-none lg:gap-2"
@@ -74,13 +74,13 @@ export const NavLinks: React.FC = () => {
             key={link.name}
             href={"#" + link.href}
             className={`
-            ${visibleEleId == link.href ? "observer-active" : "nonactive"} 
+            ${visibleFieId == link.href ? "observer-active" : "nonactive"} 
             flex flex-row flex-nowrap`}
           >
             <p className="">{link.name}</p>
             <span
               className={`
-            ${visibleEleId == link.href ? "observer-active-span" : "nonactive"}
+            ${visibleFieId == link.href ? "observer-active-span" : "nonactive"}
             hidden lg:block`}
             >
               &nbsp;-&gt;
