@@ -64,6 +64,7 @@ export const NavLinks: React.FC = () => {
     <ul
       className="text-xl flex flex-row w-full justify-evenly h-full items-center 
          bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
+    dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300
          lg:flex-col lg:bg-none lg:gap-2"
     >
       {links.map((link) => {
