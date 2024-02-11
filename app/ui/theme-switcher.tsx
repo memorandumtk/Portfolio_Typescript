@@ -34,7 +34,7 @@ export function ThemeSwitcher() {
           viewBox="0 0 24 24"
         >
           <circle
-            className="fill-yellow-400"
+            className="fill-gray-400"
             cx="12"
             cy="12"
             r="6"
@@ -54,7 +54,7 @@ export function ThemeSwitcher() {
           viewBox="0 0 24 24"
         >
           <circle
-            className="sun fill-orange-500"
+            className="sun fill-gray-500"
             cx="12"
             cy="12"
             r="6"
