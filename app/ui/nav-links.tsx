@@ -40,7 +40,7 @@ export const NavLinks: React.FC = () => {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting == true) {
+        if (entry.isIntersecting) {
           // console.log(entry.target);
           setVisibleFieId(entry.target.getAttribute("id") || links[0].href);
         }
@@ -63,9 +63,9 @@ export const NavLinks: React.FC = () => {
   return (
     <ul
       className="text-xl flex flex-row w-full justify-evenly h-full items-center
-         bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
-    dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300
-         lg:flex-col lg:bg-none lg:gap-2"
+    border-b border-gray-500 dark:border-gray-300 lg:flex-col lg:gap-2 dark:text-gray-300
+    bg-gray-50 opacity-90 dark:bg-slate-900 lg:bg-none lg:bg-transparent lg:dark:bg-none lg:dark:bg-transparent lg:border-0
+   "
     >
       {links.map((link) => {
         const LinkIcon = link.icon;
@@ -75,7 +75,7 @@ export const NavLinks: React.FC = () => {
             href={"#" + link.href}
             className={`
             ${visibleFieId == link.href ? "observer-active" : "nonactive"} 
-            flex flex-row flex-nowrap`}
+            flex flex-row flex-nowrap hover:underline`}
           >
             <p className="">{link.name}</p>
             <span

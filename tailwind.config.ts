@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: "class",
@@ -14,6 +15,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "grouse-my-picture": "url('/mypicture-grousemt.jpg')",
       },
       listStyleType: {
         none: "none",

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profilePic from "@/public/myPicture.jpg";
+import myGrouseMtPic from "@/public/mypicture-grousemt.jpg";
 import styles from "@/app/ui/styles.module.css";
 import { useEffect, useRef, useCallback, useState } from "react";
 import Social from "@/app/ui/social-icon";
@@ -11,15 +12,15 @@ export default function About() {
       <div className="title flex flex-col items-center gap-4">
         <div className="">About Me</div>
         <a
-          href="mailto:memorandum876@outlook.com"
-          className="hover:translate-x-6"
+          href=""
+          className=""
         >
           <Image
             src={profilePic}
             alt="Picture of the author"
             width={100}
             height={100}
-            className="animate-fade-in-left z-10 rounded-full shadow-lg shadow-lime-800 dark:shadow-slate-200"
+            className="hover:shadow-xl z-10 aspect-auto rounded-full shadow-lg shadow-slate-500 dark:shadow-slate-300"
           />
         </a>
       </div>

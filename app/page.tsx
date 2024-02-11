@@ -10,13 +10,18 @@ import Projects from "@/app/ui/me/projects/projects";
 import Social from "@/app/ui/social-icon";
 import { NavLinks } from "@/app/ui/nav-links";
 import HorizontalLine from "./ui/horizontal-line";
-import { ThemeSwitcher } from "@/app/ui/theme-switcher"
+import { ThemeSwitcher } from "@/app/ui/theme-switcher";
+import BackGround from "@/app/back-ground-image";
 
 export default function Home() {
   return (
-    <main className="p-20 pt-28 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center
-   bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500
-    dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300">
+    <main
+      className="p-20 pt-28 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center
+    text-slate-700 dark:text-gray-300"
+    >
+      {/*   <main className="p-20 pt-28 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center*/}
+      {/*bg-gradient-to-r from-teal-500 via-zinc-100 to-teal-500*/}
+      {/* dark:bg-gradient-radial dark:from-blue-950 dark:to-sky-900 dark:text-gray-300">*/}
       {/* // Header (Left)  Panel */}
       <div className="italic lg:sticky lg:top-0 lg:max-h-screen lg:flex-none flex flex-col gap-4 justify-center items-center text-center ">
         <h1 className="text-5xl pb-8 break-words font-bold">Kosuke Takagi</h1>
@@ -42,7 +47,10 @@ export default function Home() {
       </div>
 
       {/* // AboutMe (Right) Panel */}
-      <div id="right-panel" className="pt-8 lg:pt-16 gap-8 lg:flex-none flex flex-col">
+      <div
+        id="right-panel"
+        className="pt-8 lg:pt-16 gap-8 lg:flex-none flex flex-col"
+      >
         <div id="introduction" className="">
           <About />
         </div>

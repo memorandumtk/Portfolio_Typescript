@@ -4,7 +4,8 @@ import { robotoSerif } from "@/app/ui/fonts";
 import { alegreya } from "@/app/ui/fonts";
 import { lusitana } from "@/app/ui/fonts";
 import "./globals.css";
-import { Provider } from "@/app/ui/theme-provider";
+import { Providers } from "@/app/ui/theme-provider";
+import BackGround from "@/app/back-ground-image";
 
 export const metadata: Metadata = {
   title: "Kosuke Takagi",
@@ -18,11 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth" lang="en" >
-      <body
-        className={`${lusitana.className}`}
-      >
-        <Provider>{children}</Provider>
+    <html suppressHydrationWarning className="scroll-smooth" lang="en">
+      <body className={`${lusitana.className}`}>
+      <BackGround />
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
