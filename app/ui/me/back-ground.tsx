@@ -2,7 +2,7 @@ export default function Back() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-4">
-        <div className="title">
+        <div className="title text-center">
           Study & Work
         </div>
 

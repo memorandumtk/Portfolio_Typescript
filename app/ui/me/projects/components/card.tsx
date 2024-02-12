@@ -14,7 +14,7 @@ interface CardProps {
 const Card : React.FC<CardProps>= ({project}) => {
     return (
             <li
-                className="hover:shadow-lg hover:shadow-blue-400 text-center break-words max-w-[300px] py-2 flex flex-col items-center rounded-xl bg-green-50 dark:bg-slate-300 text-gray-700"
+                className="hover:shadow-lg hover:shadow-blue-400 text-center break-words max-w-[300px] py-2 flex flex-col items-center rounded-xl border border-slate-500 dark:border-slate-100"
             >
                 <a href={project.url} target="_blank" className="w-full">
                     <p className="text-lg p-4 font-bold">{project.name}</p>
