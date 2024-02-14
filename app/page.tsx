@@ -22,8 +22,9 @@ export default function Home() {
       {/* // Header (Left)  Panel */}
       <div className="text-xl italic lg:sticky lg:top-0 lg:max-h-screen lg:flex-none flex flex-col gap-4 justify-center items-center text-center ">
         <h1 className="text-5xl pb-8 break-words font-bold">Kosuke Takagi</h1>
-        <p className="break-words">
-          Since I started being presented by Javascript and seeking to be a good Web Developer,
+        <p className="break-words px-8">
+          Since I started being presented by Javascript <br /> and seeking to be
+          a good Web Developer,
         </p>
         <p className="">It has been...</p>
         <Suspense fallback={<Loading />}>
@@ -37,7 +38,8 @@ export default function Home() {
         </div>
         <div className="px-8 text-base">
           <p>
-            * This portfolio is written by React, Tailwind CSS, and Typescript and built with Next.js.
+            * This portfolio is written by React, Tailwind CSS, and Typescript
+            and built with Next.js.
           </p>
         </div>
         <div>

@@ -79,7 +79,7 @@ export default function Back() {
 
           <div className="">
             <Link
-                className="group hover:underline flex justify-center items-center gap-1"
+                className="text-xl group hover:underline flex justify-center items-center gap-1"
                 href="https://www.linkedin.com/in/kosuke-takagi-27002927a/details/certifications/">
                 My Certifications
               <FaArrowRight className="" />
