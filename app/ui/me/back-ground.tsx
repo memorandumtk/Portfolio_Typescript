@@ -1,3 +1,6 @@
+import Link from "next/link";
+import {FaArrowRight} from "react-icons/fa";
+import React from "react";
 export default function Back() {
   return (
     <div className="flex flex-col">
@@ -72,6 +75,15 @@ export default function Back() {
               <li className="list-disc list-inside">Cisco networking</li>
               <li className="list-disc list-inside">Hands-on of Linux</li>
             </ul>
+          </div>
+
+          <div className="">
+            <Link
+                className="group hover:underline flex justify-center items-center gap-1"
+                href="https://www.linkedin.com/in/kosuke-takagi-27002927a/details/certifications/">
+                My Certifications
+              <FaArrowRight className="" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,12 +1,15 @@
+import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
+
 export default function Social() {
   return (
     <div className="">
-      <ul className="flex flex-row gap-4 justify-center">
+      <ul className="flex flex-row gap-4 justify-center text-3xl">
         <li>
           <a href="https://github.com/memorandumtk?tab=repositories">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-6 w-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -18,7 +21,7 @@ export default function Social() {
           <a href="https://www.linkedin.com/in/kosuke-takagi-27002927a/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-6 w-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -31,7 +34,7 @@ export default function Social() {
           <a href="https://stackoverflow.com/users/21951181/kosuke">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-6 w-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -39,6 +42,7 @@ export default function Social() {
             </svg>
           </a>
         </li>
+
       </ul>
     </div>
   );
