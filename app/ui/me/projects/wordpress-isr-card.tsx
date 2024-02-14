@@ -11,10 +11,10 @@ const description =
   "This is my first project using ISR (Incremental Static Regeneration) feature from Next.js. I use Wordpress as the headless CMS.";
 const slug = "wordpress-isr";
 
-const WordpressIsr = () => {
+const WordpressIsrCard = () => {
   return (
       <Project url={url} name={name} description={description} slug={slug} imagePath={PreviewOfWordpressIsr} />
   );
 };
 
-export default WordpressIsr;
+export default WordpressIsrCard;

@@ -11,30 +11,24 @@ export default async function getGitProject() {
   const {
     data: { login },
   } = await octokit.rest.users.getAuthenticated();
-  // console.log("Hello, %s", login);
 
-  // const repos = await octokit.request("GET /users/memorandumtk/repos");
-  // Request for getting starred repo
-  const starredRepo = await octokit.request("GET /users/memorandumtk/starred");
+  // Request for getting my repositories.
+  const MyRepo = await octokit.request("GET /users/memorandumtk/repos");
 
   let name, url, description, lastUpdate;
   const projectList = [];
-  // Regex for checking if the description includes 'portfolio' or not.
-  // const regex = /(portfolio)/i;
-  // Regex for checking if the starred repo is mine or not.
-  const owerRegex = /(memorandumtk)/i;
-  for (let repo of starredRepo.data) {
-    if (owerRegex.test(repo.owner.login)) {
+  // Regex for checking if the description includes 'FCC' or not.
+  const descriptionRegex = /(FCC)/;
+  for (let repo of MyRepo.data) {
+    if (descriptionRegex.test(repo.description)) {
       name = repo.name;
       url = repo.html_url;
       description = repo.description;
       lastUpdate = new Date(repo.updated_at).toUTCString();
       let dateRegexp = /(.*)\s\d\d:/.exec(lastUpdate);
-      // console.log(dateRegexp ? dateRegexp[1] : null);
       let modifiedDate = dateRegexp ? dateRegexp[1] : null;
       projectList.push({ name, url, description, modifiedDate });
     }
   }
-  // console.log(projectList)
   return projectList;
 }
