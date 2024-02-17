@@ -4,6 +4,7 @@ import FCCProjects from "@/app/ui/me/projects/fcc-projects";
 import WordpressIsrCard from "@/app/ui/me/projects/wordpress-isr-card";
 import BlogLaravelCard from "@/app/ui/me/projects/blog-laravel-card";
 import HorizontalLineThin from "@/app/ui/horizontal-line-thin";
+import GarbageBoxFinder from "@/app/ui/me/projects/garbage-box-finder-card";
 
 export default function Projects() {
   return (
@@ -15,6 +16,7 @@ export default function Projects() {
               <div className="flex flex-col gap-4">
                   <WordpressIsrCard/>
                   {/*<BlogLaravelCard/>*/}
+                  <GarbageBoxFinder />
               </div>
           </div>
 

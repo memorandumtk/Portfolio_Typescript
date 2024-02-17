@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PreviewOfLaravelBlog from "@/public/laravel-blog-images/landing.png";
 import {FaArrowRight} from "react-icons/fa";
-import Project from "@/app/ui/me/projects/components/project";
+import MyProjectCard from "@/app/ui/me/projects/components/my-project-card";
 
 const url = "https://github.com/memorandumtk/Laravel-Blog";
 const name = "Blog System By Laravel";
@@ -13,7 +13,7 @@ const slug = "blog-laravel";
 
 const BlogLaravelCard = () => {
   return (
-      <Project url={url} name={name} description={description} slug={slug} imagePath={PreviewOfLaravelBlog} />
+      <MyProjectCard url={url} name={name} description={description} slug={slug} imagePath={PreviewOfLaravelBlog} />
 )
     ;
 };
