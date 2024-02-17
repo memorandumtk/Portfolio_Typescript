@@ -14,7 +14,7 @@ export default function Projects() {
               <HorizontalLineThin />
               <div className="flex flex-col gap-4">
                   <WordpressIsrCard/>
-                  <BlogLaravelCard/>
+                  {/*<BlogLaravelCard/>*/}
               </div>
           </div>
 
