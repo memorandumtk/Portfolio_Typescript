@@ -163,11 +163,10 @@ const Page = () => {
 
         <div>
           <h3 className="text-3xl py-4">Conclusion</h3>
-          <p>I created this app as the first app from my idea. Cause, before this project, I&apos;ve tried to make some
-            tutorial projects from Vercel or Next.js template. Although as I mentioned at the beginning of this page,
-            this app is not perfect and completed, I decided to keep it as it is until some ideas to enable this app to
-            be better. But, I put this app&apos;s shape and my experience through this app because I wanted to share and
-            record my current capability to make an app.</p>
+          <p>I created this app as the first app from my idea. Cause, before this project, I only tried to make some
+            tutorial projects from Vercel or Next.js template.
+            As I mentioned at the beginning of this page, this app is not perfect and completed, but I can&apos;t come up with some good idea to go this app further though, I record this app&apos;s summary and my experience through this app into this page. Because I wanted to share and record my current capability to make an app.
+          </p>
         </div>
       </div>
 

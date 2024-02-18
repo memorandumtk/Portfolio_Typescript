@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
-import ExampleOfMap from "@/public/garbage-box-finder/map-example.png";
+import ExampleOfMapCard from "@/public/garbage-box-finder/map-example-for-card.png";
 import MyProjectCard from "@/app/ui/me/projects/components/my-project-card";
 
 const url = "https://github.com/memorandumtk/garbage-app";
@@ -18,7 +18,7 @@ const WordpressIsrCard = () => {
       name={name}
       description={description}
       slug={slug}
-      imagePath={ExampleOfMap}
+      imagePath={ExampleOfMapCard}
     />
   );
 };
