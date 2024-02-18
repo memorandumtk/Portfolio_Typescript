@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ExampleOfMap from "@/public/garbage-box-finder/map-example.png";
 import ExampleOfRouteFile from "@/public/garbage-box-finder/route-example.png";
+import ExampleOfGarbageBoxes from "@/public/garbage-box-finder/example-downtown-bins.jpg";
 import {FaArrowLeft} from "react-icons/fa";
 
 const url = "https://github.com/memorandumtk/garbage-app";
@@ -22,8 +23,15 @@ const Page = () => {
         <p className="indent-2">
           This is my first project that I tried to make an app from my own idea,
           which is it will be useful if people can know the place garbage boxes
-          are.  It came to my mind when I was in Canada since Canada has many public garbage boxes.
+          are. It came to my mind when I was in Canada since Canada has many public garbage boxes.
         </p>
+        <div className="pt-4 flex gap-2 flex-col lg:flex-row justify-center items-center">
+          <Image src={ExampleOfGarbageBoxes}
+                 alt={"image of the garbage boxes"}
+              width={400}
+              height={200}
+          />
+        </div>
 
         <div>
           <p className="indent-2">
@@ -39,18 +47,19 @@ const Page = () => {
             circle. If you choice several buttons the circle can be magenta
             color, if three of all buttons circle will be white. In addition,
             if you marked upon another mark in the same place, you can update the mark.
-            ( not exactly same, within the degree of latitude and longitude I set, in this case +-0.0005 degree, which is approximately latitude:111.32m, longitude:75.92m )
+            ( not exactly same, within the degree of latitude and longitude I set, in this case +-0.0005 degree, which
+            is approximately latitude:111.32m, longitude:75.92m )
           </p>
           <video
-            width="320"
-            height="240"
-            controls
-            preload="none"
-            className="w-full pt-4"
+              width="320"
+              height="240"
+              controls
+              preload="none"
+              className="w-full pt-4"
           >
             <source
-              src="/garbage-box-finder/Garbage-box-finder-demo.mp4"
-              type="video/mp4"
+                src="/garbage-box-finder/Garbage-box-finder-demo.mp4"
+                type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
@@ -99,10 +108,10 @@ const Page = () => {
           </div>
           <div className="pt-4 flex gap-2 flex-col lg:flex-row justify-center items-center">
             <Image
-              src={ExampleOfMap}
-              alt={"image after map is displayed."}
-              width={400}
-              height={200}
+                src={ExampleOfMap}
+                alt={"image after map is displayed."}
+                width={400}
+                height={200}
             />
           </div>
         </section>
@@ -116,7 +125,7 @@ const Page = () => {
             <span className="italic">GeoLocation</span> in our browser. I could
             see how to do it on{" "}
             <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition"
-            className="underline hover:text-cyan-500">
+                  className="underline hover:text-cyan-500">
               Mozilla official document
             </Link>
             . It can give Web app an access to to the location of the device
@@ -133,13 +142,14 @@ const Page = () => {
           </p>
           <div className="p-4" id="location-api">
             I used Next.js App/Route&apos;s Route Handlers, we can create a file named route.js or route.ts under the
-            directory of api. On the way to using that, one of the confusing points to me was that I could only use HTTP method
+            directory of api. On the way to using that, one of the confusing points to me was that I could only use HTTP
+            method
             as a function name in route.js or ts file as a function accessed from other, as a convention. I
             referred to{" "}
             <Link href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers"
                   className="underline hover:text-cyan-500">
-            this
-            document</Link>.
+              this
+              document</Link>.
           </div>
           <div className="pt-4 flex gap-2 flex-col lg:flex-row justify-center items-center">
             <Image
@@ -153,14 +163,18 @@ const Page = () => {
 
         <div>
           <h3 className="text-3xl py-4">Conclusion</h3>
-          <p>I created this app as the first app from my idea. Cause, before this project, I&apos;ve tried to make some tutorial projects from Vercel or Next.js template. Although as I mentioned at the beginning of this page, this app is not perfect and completed, I decided to keep it as it is until some ideas to enable this app to be  better. But, I put this app&apos;s shape and my experience through this app because I wanted to share and record my current capability to make an app.</p>
+          <p>I created this app as the first app from my idea. Cause, before this project, I&apos;ve tried to make some
+            tutorial projects from Vercel or Next.js template. Although as I mentioned at the beginning of this page,
+            this app is not perfect and completed, I decided to keep it as it is until some ideas to enable this app to
+            be better. But, I put this app&apos;s shape and my experience through this app because I wanted to share and
+            record my current capability to make an app.</p>
         </div>
       </div>
 
       <div className="pt-8">
         <Link href="/"
-        className="flex items-center hover:text-cyan-500">
-          <FaArrowLeft />Back to home.
+              className="flex items-center hover:text-cyan-500">
+          <FaArrowLeft/>Back to home.
         </Link>
       </div>
     </div>
