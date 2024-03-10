@@ -81,7 +81,7 @@ export default function Back() {
             <Link
                 className="text-xl group hover:underline flex justify-center items-center gap-1"
                 href="https://www.linkedin.com/in/kosuke-takagi-27002927a/details/certifications/">
-                My Certifications
+                My Certifications (jump to LinkedIn)
               <FaArrowRight className="" />
             </Link>
           </div>
