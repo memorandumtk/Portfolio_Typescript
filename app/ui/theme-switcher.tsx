@@ -19,7 +19,7 @@ export function ThemeSwitcher() {
       {
         theme ? (
           <div className="pt-2 flex items-center gap-2">
-            <span>Your in {theme[0].toUpperCase() + theme.slice(1)} Mode</span>
+            <span>You are now in {theme[0].toUpperCase() + theme.slice(1)} Mode</span>
             <button
               className="text-lg hover:text-xl"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

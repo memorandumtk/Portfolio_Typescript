@@ -20,7 +20,7 @@ const MyProjectCard: React.FC<ProjectProps> = ({
   imagePath,
 }) => {
   return (
-    <div className="flex items-center rounded-xl border border-slate-500 dark:border-slate-100 p-2">
+    <div className="flex gap-4 items-center rounded-xl border border-slate-500 dark:border-slate-100 p-2">
       <div className="flex flex-col items-center">
         <p className="text-lg p-4 font-bold">{name}</p>
         <Link href={url} target="_blank" className="w-full hover:underline">
@@ -30,7 +30,7 @@ const MyProjectCard: React.FC<ProjectProps> = ({
         <Link
           href={"/" + slug}
           className={
-            "flex gap-2 items-center hover:underline transition ease-in-out hover:translate-x-1 duration-200"
+            "flex gap-2 items-center hover:text-cyan-500 underline transition ease-in-out hover:translate-x-1 duration-200"
           }
         >
           For detail
