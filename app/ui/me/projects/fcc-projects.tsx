@@ -28,14 +28,18 @@ export default function FccProjects() {
 
   return (
     <>
-      <button
-        onClick={() => setIsCollapsed(!isCollapsed)}
-        className="group"
-      >
-        <p className="flex items-center gap-2 text-2xl font-bold italic pt-8">
-          Free Code Camp Projects
-          {isCollapsed ? <FaCaretRight className={"group-hover:text-3xl"}/> : <FaCaretUp />}
-        </p>
+      <button onClick={() => setIsCollapsed(!isCollapsed)} className="group">
+        <div className="flex flex-col items-center gap-4 text-2xl font-bold italic pt-8">
+          <p>Free Code Camp Projects</p>
+          <div className="flex items-center justify-center">
+            <p>click here ...  </p>
+            {isCollapsed ? (
+              <FaCaretRight className={"group-hover:text-3xl"} />
+            ) : (
+              <FaCaretUp />
+            )}
+          </div>
+        </div>
       </button>
       <HorizontalLineThin />
       <div>

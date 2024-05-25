@@ -33,9 +33,9 @@ const Page = () => {
         </p>
         <p>
           <a
-              href="https://twitter.com/TK47781211/status/1766566920663249330"
+              href="https://www.youtube.com/watch?v=kkY3rtJ7jgI"
               className={"text-cyan-500 hover:underline"}
-          >This</a> is a twitter post link that you can see the demo
+          >This</a> is a link to my video that you can see the demo
           of this app.
         </p>
       </div>
