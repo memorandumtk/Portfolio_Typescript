@@ -6,6 +6,7 @@ import BlogLaravelCard from "@/app/ui/me/projects/blog-laravel-card";
 import HorizontalLineThin from "@/app/ui/horizontal-line-thin";
 import GarbageBoxFinder from "@/app/ui/me/projects/garbage-box-finder-card";
 import VercelCloneCard from "@/app/ui/me/projects/vercel-clone-card";
+import CookieManagerCard from "@/app/ui/me/projects/cookie-manager-card";
 
 export default function Projects() {
   return (
@@ -15,6 +16,7 @@ export default function Projects() {
               <p className="text-2xl font-bold italic">My Own Projects</p>
               <HorizontalLineThin />
               <div className="flex flex-col gap-4">
+                  <CookieManagerCard />
                   <VercelCloneCard/>
                   <WordpressIsrCard/>
                   <BlogLaravelCard/>

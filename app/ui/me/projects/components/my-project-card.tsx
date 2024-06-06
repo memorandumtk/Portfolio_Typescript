@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image, { StaticImageData } from "next/image";
-import PreviewOfWordpressIsr from "@/public/preview-wordpress-isr.png";
 
 interface ProjectProps {
   name: string;
